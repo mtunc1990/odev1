@@ -1,0 +1,63 @@
+body {
+	height: 100%;
+	width: 100%;
+	
+	text-align: left;
+	font-family: calibri;
+	text-shadow: 0px -1px 0px rgba(0,0,0,.8);
+}
+
+#q {
+	color: #636363;
+}
+
+#q, #button {
+	width: 250px;
+	outline: none;
+	padding: 10px;
+	background: rgba(255,255,255,.5);
+	font-size: 15px;
+	
+}
+
+#button {
+	height: 36px;
+	width: auto;
+	border: none;
+	background: #7098aa;
+	box-shadow: 0px 1px 0px rgba(0,0,0,.5);
+	color: #ffffff;
+}
+
+#twits li {
+	width: 450px;
+	margin: 0px auto 10px;
+	display: block;
+	
+	list-style: none inside none;
+	text-align: left;
+	text-shadow: none;
+	color: #444;
+	
+	display: none;
+}
+
+#twits li img {
+	float: left;
+}
+
+#twits li div {
+	font-size: 14pt;
+	padding-top: 0px;
+}
+
+#twits li a {
+	color: #666;
+	text-decoration: none;
+	padding-left: 5px;
+}
+
+#tweets li p {
+	font-size: 12pt;
+
+}

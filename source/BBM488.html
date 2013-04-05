@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <title>BBM 488 I. ODEV</title>
+    <link rel="stylesheet" href="css/draft.css">
+    	
+    <!-- kullandigim kutuphaneler: -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.2.2/underscore-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.5.3/backbone-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
+
+	<!-- Backbone modeli-->
+    <script src="js/models.js"></script>
+    <script src="js/collections.js"></script>
+    <script src="js/views.js"></script>
+    <script src="js/router.js"></script>
+	
+
+  </head>
+  <body>
+	<form id="formAra" action="" method="POST">
+	   
+	    <input autocomplete = "off" autofocus="true" type="text" name="q" id="q" value="" />
+	    <input type="submit" id="button" value="search!" />
+	</form>
+	<ul id="twits">
+	</ul>
+	<script type="text/template" id="tweet_template">
+		<li id="t_<%= id %>">
+			<h3>
+				<img src="<%= profile_image_url %>" alt="<%= from_user %>" width="50" />
+				<div>
+					<i>
+					<a href="http://twitter.com/<%= from_user %>" title="<%= from_user %>">@<%= from_user%></a> ( 
+					<span class="date"><%= Date.parse(created_at).toString().toLowerCase() %></span>)
+					</i>
+				</div>
+			</h3>
+			<p><%= text %>
+		</li>
+	</script>
+  </body>
+</html>
